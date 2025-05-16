@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT DATA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen bg-gray-50 flex justify-between items-start p-24">
+        <!-- Left Data -->
+        <div>
+            <table class="w-[520px] b-white text-center" id="tableid">
+                <tr class="border-2">
+                    <th class="p-2">Name</th>
+                    <th class="p-2">Fees</th>
+                    <th class="p-2">Course</th>
+                    <th class="p-2">Date</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Right Data -->
+        <div class="bg-white shadow-lg w-[450px] space-y-4 p-6">
+            <h1 class="font-bold text-2xl">STUDENT DATA</h1>
+            <form action="" class="space-y-4" onsubmit="studentData(event)" name="addData">
+
+                <div class="flex flex-col gap-2">
+                    <label for="Student Name" class="text-sm">Student Name</label>
+                    <input type="text" name="name" placeholder="Enter Student Name" class="border-2 border-gray-300 p-2 rounded-md placeholder:text-sm outline-none" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="Student Fees" class="text-sm">Student Fees</label>
+                    <input type="number" name="fees" placeholder="Enter Student Fees" class="border-2 border-gray-300 p-2 rounded-md placeholder:text-sm outline-none" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="Student Course" class="text-sm">Student Course</label>
+                    <input type="text" name="course" placeholder="Enter Student Course" class="border-2 border-gray-300 p-2 rounded-md placeholder:text-sm outline-none" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="Student Date" class="text-sm">Student Date</label>
+                    <input type="date" name="date" class="border-2 border-gray-300 p-2 rounded-md placeholder:text-sm outline-none" required>
+                </div>
+
+                <button class="bg-blue-500 hover:bg-blue-700 text-white text-sm p-2.5 rounded-md w-full">SUBMIT</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
