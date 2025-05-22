@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDENT DATA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <div class="h-screen bg-gray-50 flex justify-between items-start p-24">
+    <div class="h-screen bg-gray-50 flex lg:flex-row md:flex-row flex-col items-start lg:p-24 lg:gap-16 md:gap-8 md:p-4 p-2 gap-12">
         <!-- Left Data -->
-        <div>
-            <table class="w-[520px] b-white text-center" id="tableid">
+        <div class="lg:w-1/2 w-full"> 
+            <table class="b-white text-center w-full" id="tableid">
                 <tr class="border-2">
                     <th class="p-2">Name</th>
                     <th class="p-2">Fees</th>
@@ -21,7 +23,7 @@
         </div>
 
         <!-- Right Data -->
-        <div class="bg-white shadow-lg w-[450px] space-y-4 p-6">
+        <div class="bg-white shadow-lg lg:w-1/2 w-full space-y-4 p-6">
             <h1 class="font-bold text-2xl">STUDENT DATA</h1>
             <form action="" class="space-y-4" onsubmit="studentData(event)" name="addData">
 
@@ -45,7 +47,7 @@
                     <input type="date" name="date" class="border-2 border-gray-300 p-2 rounded-md placeholder:text-sm outline-none" required>
                 </div>
 
-                <button class="bg-blue-500 hover:bg-blue-700 text-white text-sm p-2.5 rounded-md w-full">SUBMIT</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white text-sm p-2.5 rounded-md w-full outline-none">SUBMIT</button>
 
             </form>
         </div>

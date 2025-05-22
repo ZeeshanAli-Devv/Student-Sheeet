@@ -18,7 +18,10 @@ const studentData = (event) =>{
             <td>${user.date}</td>
         </tr>
     
-    `
+    `,swal.fire({
+        icon : "success",
+        title : "Data Stored!"
+    })
     console.log(user);
     form.reset();
 }
